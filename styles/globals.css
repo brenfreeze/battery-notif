@@ -1,16 +1,22 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+:root {
+  --bw: 2px;
+  --bw05: calc(var(--bw) / 2);
+  --wh: 100%;
+  --offset-a: calc((50% - var(--bw05)) * -1);
+  --offset-b: calc(50% - var(--bw05));
+  --truchet: (
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--wh);
+    height: var(--wh);
+    border: var(--bw) solid #fff;
+    border-radius: 100%;
+  );
+  --truchet-a: (transform: translate(var(--offset-a), var(--offset-a)) ;);
+  --truchet-b: (transform: translate(var(--offset-b), var(--offset-b)) ;);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

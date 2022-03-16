@@ -9,12 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "browser-notification": "^3.0.0",
+    "css-doodle": "^0.26.3",
+    "moment": "^2.29.1",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-spring": "^9.4.4"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "postcss": "^8.4.8",
+    "tailwindcss": "^3.0.23"
   }
 }
